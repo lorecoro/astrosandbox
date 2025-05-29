@@ -1,0 +1,15 @@
+---
+const { title } = Astro.props;
+const list: string[] = ['Item 5', 'Item 2', 'Item 3'];
+---
+
+<div>
+  <p>
+    {title}
+  </p>
+  <ul>
+    {list.map(item => (
+      <li>{item}</li>
+    ))}
+  </ul>
+</div>
